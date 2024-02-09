@@ -9,7 +9,7 @@ $email = $_POST['email'];
 //echo "Nome: $nome <br>";
 //echo "E-mail: $email <br>";
 
-$result_usuario = "INSERT INTO testagem (nome, email) VALUES ('$nome', '$email')";
+$result_usuario = "INSERT INTO testes (nome, email) VALUES ('$nome', '$email')";
 $resultado_usuario = mysqli_query($conn, $result_usuario);
 
 if(mysqli_insert_id($conn)){
